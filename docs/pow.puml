@@ -1,0 +1,40 @@
+@startuml Pow
+
+class Comida
+class Juego
+class Kk
+class JuegoPelota
+class Ropa
+class Higiene
+class Patineta
+class Moneda
+class Carro
+class Medicina
+class Pou
+class Pelota
+class Vida
+
+
+Pou o-- Comida
+Pou <|-- Juego
+Pou o-- Kk
+Pou o-- Patineta
+Pou o-- Carro
+Pou o-- Moneda
+Pou *-- Vida
+Pou o-- Ropa
+Pou o-- Medicina
+Pou o-- Pelota
+Pou *-- Higiene
+Pou o-- JuegoPelota
+JuegoPelota *-- Juego
+JuegoPelota *-- Pelota
+Patineta o-- Juego
+Kk *-- Moneda
+Ropa o-- Higiene
+Comida o-- Vida
+Medicina o-- Vida
+
+
+
+@enduml
