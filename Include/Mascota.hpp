@@ -7,11 +7,24 @@ class Macota
     public:
         Mascota()
         {
-            this -> vida=0
-        }
-            ~Mascota(){}
-            void Comer(Alimento alimento)
-        {
+            this -> vida = 0;
         }
 
-}
+        Mascota(){}
+
+        void Comer (Alimento alimento)
+        {
+            this -> vida += 
+                alimento.ExtraerEnergia();
+        }
+
+        void Jugar()
+        {
+            this -> vida -= 2;
+        }
+
+        int LeerVida()
+        {
+            return this -> vida;
+        }
+};
