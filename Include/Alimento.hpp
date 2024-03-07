@@ -15,5 +15,4 @@ class Alimento
             return energia;
         }
 
-
 };
