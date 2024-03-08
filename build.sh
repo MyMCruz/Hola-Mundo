@@ -1,1 +1,1 @@
-g++ main.cpp -o programa -I include
+g++ main.cpp -o programa -I Include
